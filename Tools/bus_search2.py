@@ -9,7 +9,7 @@ bus=11
 bus_zd='华侨宾馆'
 
 url="http://119.146.222.248:8091/BusTransfer/brewMobile/queryArrivalForetell2?lineName=%s路&stationName=%s" % (bus,bus_zd)
-# url="http://zhgj.zhuhai.gd.cn:8090/BusTransfer/brewMobile/queryArrivalForetell2?lineName=%s路&stationName=%s&mSessionid=00000000&userId=8888" % (bus,bus_zd)
+#url="http://zhgj.zhuhai.gd.cn:8090/BusTransfer/brewMobile/queryArrivalForetell2?lineName=%s路&stationName=%s&mSessionid=00000000&userId=8888" % (bus,bus_zd)
 tree=etree.parse(url)
 root=tree.getroot()
 if(root.__len__() > 3):
